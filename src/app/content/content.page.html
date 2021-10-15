@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Scroll Events
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+     [scrollEvents]="true" 
+     (ionScrollStart)="logScrollStart($event)" 
+     (ionScroll)="logScrolling($event)"
+     (ionScrollEnd)="logScrollEnd($event)"
+>
+
+  <ion-button (click)="ScrollToBottom()"> Scroll To Bottom </ion-button>
+  <ion-button (click)="ScrollToPoint(300, 120)"> Scroll To Point Left </ion-button>
+  
+  <ion-list>
+    <ion-item *ngFor="let item of dummyList">
+      <ion-label>{{ item.value }}</ion-label>
+    </ion-item>
+  </ion-list>
+  
+
+  <ion-button (click)="ScrollToPoint(-300, -120)"> Scroll To Point Right </ion-button>
+  <ion-button (click)="ScrollToTop()"> Scroll To Top </ion-button>
+
+
+</ion-content>

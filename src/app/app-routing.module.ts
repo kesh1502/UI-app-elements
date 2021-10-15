@@ -71,6 +71,34 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'textarea',
+    loadChildren: () => import('./textarea/textarea.module').then( m => m.TextareaPageModule)
+  },
+  {
+    path: 'item',
+    loadChildren: () => import('./item/item.module').then( m => m.ItemPageModule)
+  },
+  {
+    path: 'item-divider',
+    loadChildren: () => import('./item-divider/item-divider.module').then( m => m.ItemDividerPageModule)
+  },
+  {
+    path: 'item-group',
+    loadChildren: () => import('./item-group/item-group.module').then( m => m.ItemGroupPageModule)
+  },
+  {
+    path: 'item-sliding',
+    loadChildren: () => import('./item-sliding/item-sliding.module').then( m => m.ItemSlidingPageModule)
+  },
+  {
+    path: 'label',
+    loadChildren: () => import('./label/label.module').then( m => m.LabelPageModule)
+  },
+  {
+    path: 'note',
+    loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
+  },
 ];
 
 @NgModule({

@@ -99,6 +99,72 @@ const routes: Routes = [
     path: 'note',
     loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
   },
+  {
+    path: 'list',
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
+  },
+  {
+    path: 'list-header',
+    loadChildren: () => import('./list-header/list-header.module').then( m => m.ListHeaderPageModule)
+  },
+  {
+    path: 'virtual-scroll',
+    loadChildren: () => import('./virtual-scroll/virtual-scroll.module').then( m => m.VirtualScrollPageModule)
+  },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
+  {
+    path: 'image',
+    loadChildren: () => import('./image/image.module').then( m => m.ImagePageModule)
+  },
+  {
+    path: 'thumbnail',
+    loadChildren: () => import('./thumbnail/thumbnail.module').then( m => m.ThumbnailPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'menu-panels',
+    loadChildren: () => import('./menu-panels/menu-panels.module').then( m => m.MenuPanelsPageModule)
+  },
+  {
+    path: 'menu-split-pane',
+    loadChildren: () => import('./menu-split-pane/menu-split-pane.module').then( m => m.MenuSplitPanePageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'backdrop',
+    loadChildren: () => import('./backdrop/backdrop.module').then( m => m.BackdropPageModule)
+  },
+  {
+    path: 'nav',
+    loadChildren: () => import('./nav/nav.module').then( m => m.NavPageModule)
+  },
+  {
+    path: "details/:id",
+    loadChildren: () =>
+      import("./details/details.module").then(m => m.DetailsPageModule)
+  },
+  {
+    path: 'details',
+    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
+  },
+  {
+    path: 'loading',
+    loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
+  },
+
 ];
 
 @NgModule({

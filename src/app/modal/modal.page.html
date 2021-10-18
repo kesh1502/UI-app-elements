@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-button (click)="initModal()">Open Modal</ion-button>
+
+    <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
+  
+  </div>
+</ion-content>

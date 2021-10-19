@@ -153,8 +153,7 @@ const routes: Routes = [
   },
   {
     path: "details/:id",
-    loadChildren: () =>
-      import("./details/details.module").then(m => m.DetailsPageModule)
+    loadChildren: () => import("./details/details.module").then(m => m.DetailsPageModule)
   },
   {
     path: 'details',
@@ -163,6 +162,98 @@ const routes: Routes = [
   {
     path: 'loading',
     loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
+    path: 'progress-bar',
+    loadChildren: () => import('./progress-bar/progress-bar.module').then( m => m.ProgressBarPageModule)
+  },
+  {
+    path: 'skeleton-text',
+    loadChildren: () => import('./skeleton-text/skeleton-text.module').then( m => m.SkeletonTextPageModule)
+  },
+  {
+    path: 'spinner',
+    loadChildren: () => import('./spinner/spinner.module').then( m => m.SpinnerPageModule)
+  },
+  {
+    path: 'radio',
+    loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
+  },
+  {
+    path: 'radio-group',
+    loadChildren: () => import('./radio-group/radio-group.module').then( m => m.RadioGroupPageModule)
+  },
+  {
+    path: 'range',
+    loadChildren: () => import('./range/range.module').then( m => m.RangePageModule)
+  },
+  {
+    path: 'refresher',
+    loadChildren: () => import('./refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+  {
+    path: 'reorder',
+    loadChildren: () => import('./reorder/reorder.module').then( m => m.ReorderPageModule)
+  },
+  {
+    path: 'reorder-group',
+    loadChildren: () => import('./reorder-group/reorder-group.module').then( m => m.ReorderGroupPageModule)
+  },
+  {
+    path: 'searchbar',
+    loadChildren: () => import('./searchbar/searchbar.module').then( m => m.SearchbarPageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
+  },
+  {
+    path: 'segment-button',
+    loadChildren: () => import('./segment-button/segment-button.module').then( m => m.SegmentButtonPageModule)
+  },
+  {
+    path: 'select',
+    loadChildren: () => import('./select/select.module').then( m => m.SelectPageModule)
+  },
+  {
+    path: 'slide',
+    loadChildren: () => import('./slide/slide.module').then( m => m.SlidePageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./toast/toast.module').then( m => m.ToastPageModule)
+  },
+  {
+    path: 'toggle',
+    loadChildren: () => import('./toggle/toggle.module').then( m => m.TogglePageModule)
+  },
+  {
+    path: 'toolbar',
+    loadChildren: () => import('./toolbar/toolbar.module').then( m => m.ToolbarPageModule)
+  },
+  {
+    path: 'header',
+    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
+  },
+  {
+    path: 'footer',
+    loadChildren: () => import('./footer/footer.module').then( m => m.FooterPageModule)
+  },
+  {
+    path: 'title',
+    loadChildren: () => import('./title/title.module').then( m => m.TitlePageModule)
+  },
+  {
+    path: 'back-button',
+    loadChildren: () => import('./back-button/back-button.module').then( m => m.BackButtonPageModule)
+  },
+  {
+    path: 'text',
+    loadChildren: () => import('./text/text.module').then( m => m.TextPageModule)
   },
 
 ];
